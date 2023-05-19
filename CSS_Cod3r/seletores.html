@@ -6,7 +6,54 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        *{ /* Para todas as tags */
+            color: #ff0;
+            background-color: #f77;
+        }
+        .tag{ /* Para uma tag com uma classe especifica */
+            color: #f0f;
+            background-color: #7f7;
+        }
+        #aprovados{ /* Para uma tag com # especifico */
+            color: #0ff;
+            background-color: #77f;
+        }
+        #aninhado > div{ /* Para a tag filho direto de uma outra tag com # especifico */
+            color: #fff;
+            background-color: #111;
+        }
+        #aninhado section{ /* Para qualquer tag dentro de uma outra tag com # especifico */
+            color: #fff;
+            background-color: #333;
+        }
+        p + ul{ /* Tags adjacentes que possuem uma mesma tag pai */
+            color: #fff;
+            background-color: #555;
+        }
+        p ~ ol{ /* Tags difentes que possuem uma mesma tag pai */
+            color: #fff;
+            background-color: #777;
+        }
+        [feira]{ /* Tags que possuem uma propriedade específica */
+            color: #fff;
+            background-color: #999;
+        }
+        [feira='casa']{ /* Tags que possuem uma propriedade específica com um valor especifico */
+            color: #fff;
+            background-color: #aaa;
+        }
+        [feira='escritorio empresa']{ /* Tags que possuem uma propriedade específica com mais de um valor especifico */
+            color: #fff;
+            background-color: #ccc;
+        }
+        [feira~='escritorio']{ /* Tags que possuem uma propriedade específica selecionando um dos valores especificos */
+            color: #fff;
+            background-color: #eee;
+        }
+        [feira*='sa']{ /* Tags que possuem uma propriedade específica selecionando caracteres dos valores especificos (casa e empresa tem 'sa') */
+            color: #fff;
+            background-color: #eee;
+        }
     </style>
 </head>
 
