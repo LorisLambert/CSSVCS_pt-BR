@@ -5,7 +5,34 @@
     <meta charset="UTF-8">
     <title>Display</title>
     <style>
-        /* ... */
+        body{
+            font-size: 40px;
+            color: #fff;
+            background-color: coral;
+        }
+        ul{
+            padding: 0;
+        }
+        div{
+            background-color: seagreen;
+        }
+        span{
+            background-color: dodgerblue;
+        }
+        li{
+            background-color: greenyellow;
+            color: green;
+        }
+        div, span, li{
+            width: 50%;
+            width: 200px;
+            height: 80px;
+            padding-top: 30px;
+            text-align: center;
+            display: block; /* Cada elemento ficará em sua própria linha sem ficar um por cima do outro */
+            /* display: inline; /* Os elementos ficam numa mesma linha sem levar a altura em consideração*/
+            /* display: inline-block; /* Os elementos ficam numa mesma linha e levam a altura em consideração */
+        }
     </style>
 </head>
 

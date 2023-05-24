@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <title>Herança</title>
     <style>
-        /* ... */
+        /* Existem atributos que não herdão valores de seus pais, portanto, para herdar os valores é necessário usar inherit. */
+        body{
+            font-family: monospace;
+            font-size: 40px;
+            border: solid 3px hotpink;
+            padding: 50px;
+        }
+        div{
+            border: inherit; /* Valor herdado do body */
+            padding: inherit; /* Valor herdado do body */
+        }
     </style>
 </head>
 
 <body>
-    <h1>Herança</h1>
+    <h1 style="background-color: olive;">Herança</h1>
     <div>Estou herdando</div>
 </body>
 

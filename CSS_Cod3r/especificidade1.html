@@ -6,6 +6,25 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /*
+            Ordem de prioridade
+            1. !importante
+            2. seletores mais específicos
+            3. útima regra processada
+        */
+        p{
+            background-color: #aaa;
+        }
+        .observacao{
+            background-color: #5f5 !important; /* Neste caso, o !impotante não funciona pois background é diferente de background-color */
+            border: dashed 5px;
+            padding: 20px !important; /* Neste caso, o !impotante funciona */
+            font-size: 40px;
+        }
+        p.observacao{ /* Mais específico, portanto, prioritário */
+            padding: 2px;
+            background: linear-gradient(to right, red, yellow);
+        }
     </style>
 </head>
 
